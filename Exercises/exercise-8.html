@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 8</title>
+
+</head>
+
+<body>
+
+  <button style="margin: 0px 0px 30px 0px;" onclick="changeText()" id="todo-button">
+    Click
+  </button>
+
+  <script>
+    function changeText() {
+      let newText = document.getElementById("todo-button");
+      newText.innerText = "Done";
+    }
+  </script>
+
+
+  <div id="counter">
+    0
+  </div>
+
+  <button style="margin: 0px 0px 30px 0px;" onclick="add_1()">
+    Up
+  </button>
+
+  <script>
+    let count = 0;
+
+    function add_1() {
+      count = count + 1
+      let counter = document.getElementById("counter");
+      counter.innerText = count
+
+    }
+  </script>
+
+
+  <div id="counter1">
+    100
+  </div>
+
+  <button style="margin: 0px 0px 30px 0px; display: block;" onclick="add_2()">
+    Down
+  </button>
+
+  <script>
+    let count1 = 100;
+
+
+    function add_2() {
+      count1 = count1 - 1
+      let counter = document.getElementById("counter1");
+      counter.innerText = count1
+
+    }
+
+
+  </script>
+
+  <input type="text" id="chore">
+
+  <button onclick="addChore()">
+    Add to the list
+  </button>
+
+  <script>
+    function addChore() {
+      let text = document.getElementById("chore");
+      let title = text.value;
+
+      let div = document.createElement("div");
+      div.innerText = title;
+      document.body.appendChild(div);
+    }
+
+
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
