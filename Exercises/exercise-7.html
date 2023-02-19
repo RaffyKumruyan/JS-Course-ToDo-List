@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 7</title>
+
+</head>
+
+<body>
+  <script>
+    document.title = "JS Exercise 7";
+  </script>
+
+  <script>
+
+    function toUpper(stringArr) {
+      let result = [];
+
+      stringArr.forEach(function (str) {
+        result.push(str.toUpperCase());
+      });
+
+      console.log(result);
+    }
+    toUpper(["hello", "world"]);
+
+
+    function arrayDouble(soundType) {
+      let result1 = [];
+
+      soundType.forEach(function (str1) {
+        result1.push(str1);
+        result1.push(str1);
+      });
+
+      console.log(result1);
+    }
+    arrayDouble(["bark", "meow", "quack"])
+
+
+    function arraySum(number) {
+      let total = 0;
+
+      number.forEach(function (value) {
+        total = total + value;
+      });
+
+      console.log(total);
+    }
+
+    arraySum([1, 2, 3, 4]);
+    arraySum([1, 2, 3, 10]);
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
